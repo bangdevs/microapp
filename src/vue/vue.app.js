@@ -36,9 +36,9 @@ const vueLifecycles = singleSpaVue({
       gridColumns: ['name', 'power'],
       gridData: [
         { name: 'Chuck Norris', power: Infinity },
-        { name: 'Bruce Lee', power: 9000 },
-        { name: 'Jackie Chan', power: 7000 },
-        { name: 'Jet Li', power: 8000 },
+        { name: 'Bruce Lee', power: 9000, city: 'ho chi minh' },
+        { name: 'Jackie Chan', power: 7000, city: 'ho chi minh' },
+        { name: 'Jet Li', power: 8000, city: 'ho chi minh' },
         {
           "id": 24667,
           "brandName": "Abacavir/Lamivudine 600/300 Mylan Tablet",

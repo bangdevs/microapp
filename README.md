@@ -12,6 +12,7 @@
 - angular-ui-router
 - Webpack
 - Babel
+- and more please view package.json
 
 ### Project config for using in the future
 - Mobx maneger store (in future)

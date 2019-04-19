@@ -25,8 +25,8 @@ export default class HomeRoot extends React.Component {
               Introduction
             </h4>
             <p className="caption">
-              Single-spa is a javascript libary that allows for many small applications to coexist in one single page application.
-              This website is a demo application that shows off what single-spa can do.
+              micro-app is a javascript libary that allows for many small applications to coexist in one single page application.
+              This website is a demo application that shows off what micro-app can do.
             </p>
             <Walkthroughs />
           </div>
@@ -35,7 +35,7 @@ export default class HomeRoot extends React.Component {
               Framework examples
             </h4>
             <p className="caption">
-              Single-spa allows for multiple frameworks to coexist in the same single page application.
+              micro-app allows for multiple frameworks to coexist in the same single page application.
             </p>
             <div className="row">
               <Technology
@@ -43,70 +43,39 @@ export default class HomeRoot extends React.Component {
                 imgBackgroundColor="#222222"
                 cardTitle="React"
                 href="/react"
-                explanation={`Yep we've got a React example. We actually just borrowed it from the react-router examples, to show how easy it is to migrate an existing app into single-spa`}
+                explanation={`Yep we've got a React example. We actually just borrowed it from the react-router examples, to show how easy it is to migrate an existing app into micro-app`}
               />
               <Technology
                 imgSrc="https://angularjs.org/img/ng-logo.png"
                 cardTitle="AngularJS"
                 href="/angularjs"
-                explanation={`AngularJS has some quirks, but works just fine when you use the single-spa-angularjs npm library to help you set up your app`}
+                explanation={`AngularJS has some quirks, but works just fine when you use the micro-app-angularjs npm library to help you set up your app`}
               />
               <Technology
                 imgSrc="/images/angular.svg"
                 imgBackgroundColor="#1976D2"
                 cardTitle="Angular"
                 href="/angular"
-                explanation={`Angular is compatible with single-spa, check out a simple 'Hello World' in the example.`}
+                explanation={`Angular is compatible with micro-app, check out a simple 'Hello World' in the example.`}
               />
               <Technology
                 imgSrc="https://vuejs.org/images/logo.png"
                 cardTitle="Vue.js"
                 href="/vue"
-                explanation={`Vue.js is compatible with single-spa. Easily get started with the single-spa-vue plugin.`}
+                explanation={`Vue.js is compatible with micro-app. Easily get started with the micro-app-vue plugin.`}
               />
               <Technology
-                imgSrc="/images/svelte.jpg"
-                cardTitle="Svelte"
-                href="/svelte"
-                explanation={`Svelte is compatible with single-spa. Easily get started with the single-spa-svelte plugin.`}
+                imgSrc="/images/ember.png"
+                cardTitle="Ember"
+                href="/ember"
+                explanation={`Svelte is compatible with micro-app. Easily get started with the micro-app-Ember plugin.`}
               />
-              <Technology
-                imgSrc="https://cycle.js.org/img/cyclejs_logo.svg"
-                cardTitle="CycleJS"
-                href="/cyclejs"
-                explanation={`CycleJS is compatible with single-spa. Easily get started with the single-spa-cycle plugin.`}
-              />
-              <Technology
-                imgSrc="https://camo.githubusercontent.com/31415a8c001234dbf4875c2c5a44b646fb9338b4/68747470733a2f2f63646e2e7261776769742e636f6d2f646576656c6f7069742f62343431366435633932623734336462616563316536386263346332376364612f7261772f333233356463353038663765623833346562663438343138616561323132613035646631336462312f7072656163742d6c6f676f2d7472616e732e737667"
-                cardTitle="Preact"
-                href="/preact"
-                explanation={`Preact is compatible with single-spa. Easily get started with the single-spa-preact plugin.`}
-              />
-              <Technology
-                imgSrc="http://xitrus.es/blog/imgs/vnll.jpg"
-                cardTitle="Vanilla"
-                href="/vanilla"
-                explanation={`
-                  If you want to write single-spa applications in vanilla javascript, that's fine too.
-                `}
-              />
-              <Technology
-                imgSrc="/images/inferno-logo.png"
-                cardTitle="Inferno"
-                href="/inferno"
-                explanation={`
-                  Inferno is compatible with single-spa. Easily get started with the single-spa-inferno plugin.
-                `}
-              />
+
             </div>
           </div>
           <div className="row">
-            <h4 className="light">
-              Build system examples
-            </h4>
-            <p className="caption">
-              Each application chooses it's own build system, which will fit into the root single-spa application at runtime.
-            </p>
+            <h4 className="light"> Build system examples</h4>
+            <p className="caption">Each application chooses it's own build system, which will fit into the root micro-app application at runtime.</p>
             <div className="row">
               <Technology
                 imgSrc="https://avatars0.githubusercontent.com/webpack?&s=256"
@@ -125,10 +94,10 @@ export default class HomeRoot extends React.Component {
                 cardTitle="Iframe"
                 href="/vanilla"
                 explanation={`
-                  Putting things in iframes is the wrong thing to do many times, but there are valid use cases for it.
-                  If you put a single-spa application into an iframe, you get a whole new DOM and global namespace for variables.
-                  But the cons include degraded performance and trickier inter-app communication.
-                `}
+                Putting things in iframes is the wrong thing to do many times, but there are valid use cases for it.
+                If you put a single-spa application into an iframe, you get a whole new DOM and global namespace for variables.
+                But the cons include degraded performance and trickier inter-app communication.
+              `}
               />
             </div>
           </div>
