@@ -1,17 +1,19 @@
 # microapp
 - https://github.com/bangdevs/microapp
-
+### Farmework can code in the project
 - React
 - AngularJS
 - Angular
 - Vue
 - Ember
 
+### Project current using 
 - react-router
 - angular-ui-router
 - Webpack
 - Babel
 
+### Project config for using in the future
 - Mobx maneger store (in future)
 - Boostrap global css (in future)
 - Using sass | scss | postCss (in future)
