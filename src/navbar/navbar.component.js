@@ -2,7 +2,7 @@ import React from 'react';
 import Dialog from './dialog.component.js';
 import FrameworkInspector from './framework-inspector.component.js';
 import { getBorder, showFrameworkObservable } from 'src/common/colored-border.js';
-
+import './navbar.component.css'
 export default class Navbar extends React.Component {
   constructor() {
     super();
@@ -47,11 +47,16 @@ export default class Navbar extends React.Component {
 }
 
 function menuItems() {
+  const styles = {
+    styles: {
+      background: 'blue'
+    }
+  }
   return (
-    <div>
+    <div id='menu-wrap-top'>
       <FrameworkInspector />
       <li>
-        <a onClick={() => this.navigateTo("/")}> Home </a>
+        <a onClick={() => this.navigateTo("/")} {...styles}> Home </a>
       </li>
       <li>
         <a onClick={() => this.navigateTo("/react")}>React</a>
@@ -66,29 +71,6 @@ function menuItems() {
         <a onClick={() => this.navigateTo("/vue")}> Vue.js</a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/svelte")}>Svelte </a>
-      </li>
-      <li>
-        <a onClick={() => this.navigateTo("/cyclejs")}>
-          CycleJS
-        </a>
-      </li>
-      <li>
-        <a onClick={() => this.navigateTo("/preact")}>
-          Preact
-        </a>
-      </li>
-      <li>
-        <a onClick={() => this.navigateTo("/vanilla")}>
-          Vanilla
-        </a>
-      </li>
-      <li>
-        <a onClick={() => this.navigateTo("/inferno")}>
-          Inferno
-        </a>
-      </li>
-      <li>
         <a onClick={() => this.navigateTo("/ember")}>
           Ember
         </a>
@@ -96,3 +78,27 @@ function menuItems() {
     </div>
   )
 }
+
+// <li>
+// <a onClick={() => this.navigateTo("/svelte")}>Svelte </a>
+// </li>
+// <li>
+// <a onClick={() => this.navigateTo("/cyclejs")}>
+//   CycleJS
+// </a>
+// </li>
+// <li>
+// <a onClick={() => this.navigateTo("/preact")}>
+//   Preact
+// </a>
+// </li>
+// <li>
+// <a onClick={() => this.navigateTo("/vanilla")}>
+//   Vanilla
+// </a>
+// </li>
+// <li>
+// <a onClick={() => this.navigateTo("/inferno")}>
+//   Inferno
+// </a>
+// </li>
